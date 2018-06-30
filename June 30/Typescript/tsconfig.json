@@ -1,0 +1,14 @@
+{
+    "compilerOptions":{
+        "removeComments": true,
+        "sourceMap": true,
+        "target": "es5",
+        "experimentalDecorators": true
+    },
+    "files": [
+        // "syntax.ts"
+        // "data-types.ts"
+        // "classes.ts"
+        "decorator.ts"
+    ]
+}
