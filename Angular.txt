@@ -1,0 +1,65 @@
+Install angular - cli (command line interface)
+
+npm install -g @angular/cli
+
+============================================
+Angular-cli commands
+
+ng new application-name options
+
+application-name
+	1. application name must start with an alphabet
+	2. if you want to separate two words, you cannot use underscore ( _ ), use - instead
+	3. after separating words, you can only start another word with an alphabet
+
+for options - ng new --help
+
+--inline-styles
+--inline-template
+--skip-tests
+--skip-git
+--skip-install
+--directory
+--style
+
+ng serve
+	start the application
+	start local server on default port (4200)
+	
+
+==============================================================================
+Things working behind
+
+gulp/grunt
+	task runners
+webpack
+	module bundler
+webpack-dev-server
+	local development server
+
+
+==============================================================================
+
+//class decorator
+
+It is used to create a module, it makes a class behave as a module
+
+@NgModule({
+	imports: [ //modules ],
+	declarations: [ //remianing things - components, pipes, directives ],
+	providers: [ //services ],
+
+	//bootstrap here means initial
+	bootstrap: [],
+	entryComponents: [],
+	exports: []
+})
+
+//class decorator
+
+it is used to create a component, it makes a class behave as a component
+@Component({
+	selector: '',
+	templateUrl: ''
+})
+
