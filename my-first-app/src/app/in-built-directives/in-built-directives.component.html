@@ -1,0 +1,72 @@
+<!-- structural directives -->
+<!-- *ngIf="condition" -->
+<!-- *ngIf - Angular 2, 4, 5, 6 -->
+<p *ngIf="isTrue">
+  This is a para
+</p>
+
+<!-- 
+  <p [ngIf]="isTrue"
+
+ -->
+<button (click)="isTrue = !isTrue">Toggle</button>
+
+<!-- *ngIf else - Angular 4, 5, 6 -->
+<p *ngIf="isTrue; else elsePart">
+  This is true
+</p>
+
+<ng-template #elsePart>
+  <p>
+    This is false part
+  </p>
+</ng-template>
+
+<!-- *ngIf then else - Angular 6 -->
+<p *ngIf="isTrue; then thenBlock; else elseBlock">
+  Used on this para
+</p>
+
+<ng-template #thenBlock>
+  <p>
+    This is then block
+  </p>
+</ng-template>
+
+<ng-template #elseBlock>
+  <p>
+    This is else block
+  </p>
+</ng-template>
+
+<!-- *ngFor of -->
+<p *ngFor="let el of myarr; let i = index; let f = first; let l = last; let e = even; let o = odd">
+  {{i+1}}. {{el}} {{o}}
+</p>
+
+<button (click)="myarr.push(10)">Push</button>
+<button (click)="myarr.pop()">Pop</button>
+
+<!-- ngSwitch -->
+
+<input type="text" [(ngModel)]="switchCondition">
+
+<div [ngSwitch]="switchCondition">
+  <p *ngSwitchCase="'Nitin'">Nitin</p>
+  <p *ngSwitchCase="'Amit'">Amit</p>
+  <p *ngSwitchDefault>Nothing matched</p>
+</div>
+
+<!-- attribute directives -->
+
+<!-- ngClass -->
+<!-- [ngClass]="{'class_name':condition, 'class2_name':condition}" -->
+
+<p [ngClass]="{
+  'red': switchCondition == 'Nitin',
+  'blue': switchCondition == 'Amit',
+  'green': switchCondition == 'hello',
+  'yellow': switchCondition != 'hello'
+}">
+  Ng Class binding
+</p>

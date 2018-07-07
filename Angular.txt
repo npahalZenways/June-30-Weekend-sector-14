@@ -91,7 +91,15 @@ data-binding
 =============================================================================
 
 in-built-directives
-	1. Structural directives
-	2. Attribute directives
+	1. Structural directives - which can remove or create structure of an element or templte inside DOM
+		- *ngIf Then Else
+		- *ngFor Of
+		- ngSwitch { *ngSwitchCase and *ngSwitchDefault }
+
+	2. Attribute directives - works on value or properties of element
+		- ngModel
+		- ngClass
+		- ngStyle
+
 
 

@@ -23,4 +23,16 @@
 <!-- two-way binding [()] -->
 <!-- it works where we have a property x and and event xChange, there we can write [(x)] -->
 
-<input type="text" [(ngModel)]="myapp">
+<input type="text" #url>
+
+<!-- local template variable or template referrence variable -->
+<!-- #name -->
+
+<p #para>
+    My para
+</p>
+<p #para2>
+    Para 2
+</p>
+
+<button (click)="change(para, para2, url)">Click</button>

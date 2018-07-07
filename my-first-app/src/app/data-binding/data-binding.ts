@@ -17,7 +17,7 @@ export class DataBinding{
         return this.myapp;
     }
 
-    change(e){
+    change(...e){
         console.log(e)
     }
 }
