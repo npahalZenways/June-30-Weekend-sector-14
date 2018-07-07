@@ -1,0 +1,26 @@
+<!-- one-way binding -->
+<!-- interpolation -->
+<p>
+    Name of this component {{myapp}}
+</p>
+<p>
+    4 + 4 = {{4+4}}
+</p>
+
+<!-- property binding -->
+<a [href]="linkUrl">Link</a>
+
+<!-- class binding [class.abc]="condition" -->
+<p [class.ab]="isTrue">
+    This is class binding
+</p>
+
+<button (click)="isTrue = !isTrue">Toggle</button>
+
+<!-- event binding -->
+<button (click)="linkUrl = 'www.facebook.com'; myapp = 'new app'">Click</button>
+
+<!-- two-way binding [()] -->
+<!-- it works where we have a property x and and event xChange, there we can write [(x)] -->
+
+<input type="text" [(ngModel)]="myapp">

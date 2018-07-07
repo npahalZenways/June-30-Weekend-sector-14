@@ -3,15 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { Custom } from "./custom";
+import { DataBinding } from './data-binding/data-binding';
+import { FormsModule } from "@angular/forms";
+
 @NgModule({
   declarations: [
     AppComponent,
-    Custom
+    Custom,
+    DataBinding
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
-  bootstrap: [Custom]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

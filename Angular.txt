@@ -22,10 +22,21 @@ for options - ng new --help
 --directory
 --style
 
+===========================================================================
+Angular cli commands
+
+for help with options in any command just write the command and --help
+example: ng generate --help 
+		- this will output all the options available with ng generate command
+	
+	ng generate component --help
+		- this will output all the options available with ng generate component command
+
 ng serve
 	start the application
 	start local server on default port (4200)
-	
+
+ng generate component component_name _options_
 
 ==============================================================================
 Things working behind
@@ -62,4 +73,25 @@ it is used to create a component, it makes a class behave as a component
 	selector: '',
 	templateUrl: ''
 })
+
+=============================================================================
+
+data-binding
+	1. One-way binding
+		- interpolation - component ==> view
+			syntax - {{ property_name }}
+		- property binding - component ==> view
+			syntax - <a [href]="property_name"></a>
+		- event binding view ==> component
+			syntax - <button (click)="expression"></button>
+
+	2. Two-way binding
+		- component <==> view
+
+=============================================================================
+
+in-built-directives
+	1. Structural directives
+	2. Attribute directives
+
 
