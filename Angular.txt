@@ -38,6 +38,8 @@ ng serve
 
 ng generate component component_name _options_
 
+ng generate service service_name
+
 ==============================================================================
 Things working behind
 
@@ -121,3 +123,4 @@ Services
 	- whenever a service is injected, that dependency injection searches for providers (providers tells how a service will work)
 	- service class have a singleton instance, i.e., all components will refer to the same instance of service hence can be used for data-sharing
 	- services may also have more than one instance which depends where you inject that service.
+	- services can be injected in service themselves in Injectable, Component - providers and viewProviders array, NgModule - providers, Directives - Providers

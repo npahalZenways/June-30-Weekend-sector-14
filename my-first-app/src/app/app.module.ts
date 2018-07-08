@@ -8,6 +8,7 @@ import { FormsModule } from "@angular/forms";
 import { InBuiltDirectivesComponent } from './in-built-directives/in-built-directives.component';
 import { OneComponent } from './data-sharing/one/one.component';
 import { TwoComponent } from './data-sharing/two/two.component';
+import { MyService } from './service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,9 @@ import { TwoComponent } from './data-sharing/two/two.component';
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    MyService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
