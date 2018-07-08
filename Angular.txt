@@ -102,4 +102,22 @@ in-built-directives
 		- ngStyle
 
 
+===============================================================================
 
+data-sharing between related components, two components are in direct relation when we place a component selector in other component's view
+
+	inputs - inputs can be provided to a component's instance using property binding which can be received in the component
+		- inputs which has to be received in a component can be declared inside component decorator's inputs array or we can also decorate a property using Input decorator
+
+	outputs - outputs can be received from a component's instance which can be sent by the component using custom event.
+		- outputs which has to be sent from the component can be declared inside component decorator's outputs array or we can also decorate a property using Output decorator
+		- Custom events is an instance of EventEmitter class which can be imported from @angular/core;
+		- A custom event can be triggered by calling emit() method that custom event.
+
+===============================================================================
+
+Services
+	- services are injectable i.e., we can inject services inside components that is known as dependency injection
+	- whenever a service is injected, that dependency injection searches for providers (providers tells how a service will work)
+	- service class have a singleton instance, i.e., all components will refer to the same instance of service hence can be used for data-sharing
+	- services may also have more than one instance which depends where you inject that service.
