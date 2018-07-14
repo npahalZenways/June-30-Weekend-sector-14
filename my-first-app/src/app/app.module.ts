@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { Custom } from "./custom";
 import { DataBinding } from './data-binding/data-binding';
-import { FormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { InBuiltDirectivesComponent } from './in-built-directives/in-built-directives.component';
 import { OneComponent } from './data-sharing/one/one.component';
 import { TwoComponent } from './data-sharing/two/two.component';
 import { MyService } from './service';
+import { FormsComponent } from './forms/forms.component';
+import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
 
 @NgModule({
   declarations: [
@@ -17,11 +19,14 @@ import { MyService } from './service';
     DataBinding,
     InBuiltDirectivesComponent,
     OneComponent,
-    TwoComponent
+    TwoComponent,
+    FormsComponent,
+    ReactiveFormsComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     MyService
