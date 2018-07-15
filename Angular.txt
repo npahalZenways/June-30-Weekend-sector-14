@@ -144,3 +144,32 @@ Forms	- FormsModule
 			- invalid
 			- valid
 
+================================================================================
+
+API integration
+
+	HTTP service
+		- Angular 2, 4, 5 { deprecated in Angular 5 }
+
+	HTTP client service
+		- Angular 5, 6
+
+===============================================================================
+
+RouterModule
+
+	directives
+		- routerLink
+		- routerLinkActive
+
+	path configuration	
+		- path
+		- redirectTo
+		- pathMatch
+		- component
+		- children
+		- loadChildren
+
+	routing through component using router service
+
+	retreive route info from ActivatedRoute Service

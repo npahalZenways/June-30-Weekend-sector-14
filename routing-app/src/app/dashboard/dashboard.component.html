@@ -1,0 +1,7 @@
+<button class="btn" [routerLink]="['/dashboard','home']">Home</button>
+<!-- [routerLink]="['dashboard','home']" converts into routerLink="/dashboard/home" -->
+<button class="btn" [routerLink]="['/dashboard','aboutus']">About</button>
+
+<div class="border rounded m-2 p-4">
+  <router-outlet></router-outlet>
+</div>
