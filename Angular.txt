@@ -124,3 +124,23 @@ Services
 	- service class have a singleton instance, i.e., all components will refer to the same instance of service hence can be used for data-sharing
 	- services may also have more than one instance which depends where you inject that service.
 	- services can be injected in service themselves in Injectable, Component - providers and viewProviders array, NgModule - providers, Directives - Providers
+
+=================================================================================
+
+Forms	- FormsModule
+
+	template-driven forms
+	
+		form - ngForm - FormGroup
+			- inputs - ngModel - FormControl
+
+		states
+			- touched
+			- untouched - default
+
+			- dirty
+			- pristine - default
+
+			- invalid
+			- valid
+

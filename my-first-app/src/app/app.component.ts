@@ -12,9 +12,6 @@ export class AppComponent {
   constructor(
     private myserv: MyService
   ){
-    setInterval(function(){
-      console.log(myserv.value);
-    }, 2000)
   
   }
 }

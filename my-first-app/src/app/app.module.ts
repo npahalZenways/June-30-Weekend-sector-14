@@ -11,6 +11,8 @@ import { TwoComponent } from './data-sharing/two/two.component';
 import { MyService } from './service';
 import { FormsComponent } from './forms/forms.component';
 import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
+import { ApiIntegrationComponent } from './api-integration/api-integration.component';
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -21,12 +23,14 @@ import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.componen
     OneComponent,
     TwoComponent,
     FormsComponent,
-    ReactiveFormsComponent
+    ReactiveFormsComponent,
+    ApiIntegrationComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [
     MyService
