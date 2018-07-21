@@ -15,6 +15,8 @@ import { ApiIntegrationComponent } from './api-integration/api-integration.compo
 import { HttpClientModule } from "@angular/common/http";
 import { PipesComponent } from './pipes/pipes.component';
 import { CustomPipe } from "./pipes/custom-pipe";
+import { DirectivesComponent } from './directives/directives.component';
+import { MyDirective } from "./directives/my-directive";
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { CustomPipe } from "./pipes/custom-pipe";
     ReactiveFormsComponent,
     ApiIntegrationComponent,
     PipesComponent,
-    CustomPipe
+    CustomPipe,
+    DirectivesComponent,
+    MyDirective
   ],
   imports: [
     BrowserModule,
