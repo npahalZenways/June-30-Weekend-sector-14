@@ -13,6 +13,8 @@ import { FormsComponent } from './forms/forms.component';
 import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
 import { ApiIntegrationComponent } from './api-integration/api-integration.component';
 import { HttpClientModule } from "@angular/common/http";
+import { PipesComponent } from './pipes/pipes.component';
+import { CustomPipe } from "./pipes/custom-pipe";
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { HttpClientModule } from "@angular/common/http";
     TwoComponent,
     FormsComponent,
     ReactiveFormsComponent,
-    ApiIntegrationComponent
+    ApiIntegrationComponent,
+    PipesComponent,
+    CustomPipe
   ],
   imports: [
     BrowserModule,

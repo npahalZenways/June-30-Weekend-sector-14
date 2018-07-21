@@ -1,0 +1,81 @@
+<!-- A date without any pipe used -->
+<p>
+  Todays date : {{today}}
+</p>
+
+<!-- date pipe -->
+<p>
+  Todays date with pipe: {{ today | date | lowercase}}
+</p>
+
+<!-- date pipe with parameter -->
+<p>
+  Todays date with pipe and parameters : {{ today | date : 'short'}}
+</p>
+
+<!-- date pipe with custom parameter -->
+<p>
+  Todays date with pipe and custom paramater : {{ today | date:'dd @ MM @ yyyy' }}
+</p>
+
+<!-- string without any pipe -->
+
+<p>
+  My string : {{mystr}}
+</p>
+
+<!-- uppercase and lowercase pipe -->
+<p>
+  My string: {{ mystr | uppercase}}
+</p>
+
+<p>
+  My string: {{ mystr | lowercase}}
+</p>
+
+<!-- number without pipe -->
+<p>
+  My number: {{mynumber}}
+</p>
+
+<!-- decimalpipe | number -->
+<p>
+  My number with: {{mynumber | number}}
+</p>
+
+<!-- digits info : { minimum digits before decimal } . { minimum digits after decimal } - { maximum digits after decimal } -->
+<p>
+  My number with pipe and custom parameter : {{ mynumber | number : '5.8-9'}}
+</p>
+
+<!-- currency pipe -->
+<p>
+  my number with currency pipe: {{ mynumber | currency }}
+</p>
+
+<!-- : code : display : digits info -->
+<!-- 
+  code is currency code,
+  display - code, symbol, symbol narrow,
+  digits info - { minimum digits before decimal } . { minimum digits after decimal } - { maximum digits after decimal }
+ -->
+<p>
+  My Number with currency pipe and custom parameter : {{ mynumber | currency : 'CAD' : 'symbol-narrow' }}
+</p>
+
+
+<!-- custom pipe -->
+<button (click)="option = 'uppercase'">Upper Case</button>
+<button (click)="option = 'lowercase'">Lower Case</button>
+<button (click)="option = undefined">Original</button>
+<p>
+  My string with custom pipe : {{ mystr | custom : option}}
+</p>
+
+<input type="text" [(ngModel)]="query">
+<table>
+  <tr *ngFor="let emp of employees">
+    <td>{{emp.name}}</td>
+    <td>{{emp.empId}}</td>
+  </tr>
+</table>
